@@ -149,7 +149,7 @@
         function sendWhatsappMessage() {
             var apilink = 'http://';
 
-            apilink += isMobile ? 'api' : 'web';
+            apilink += isMobile ? 'api' : 'api';
             apilink += '.whatsapp.com/send?phone=' + settings.phone + '&text=' + encodeURI(settings.message);
 
             window.open(apilink);
